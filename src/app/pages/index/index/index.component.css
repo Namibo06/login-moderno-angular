@@ -1,0 +1,34 @@
+div.index-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-image: url('https://th.bing.com/th/id/R.662eb4027ea7802cbf0e8599050c5604?rik=JwHPAzo9Hw9%2fXw&pid=ImgRaw&r=0');
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+app-sessao-cadastro{
+  width: 40%;
+}
+
+app-sessao-login{
+  width: 60%;
+}
+
+@media screen and (width < 880px) {
+app-arrow{
+  display: none;
+}
+
+app-sessao-cadastro{
+  width: 100%;
+}
+
+app-sessao-login{
+  width: 100%;
+}
+}

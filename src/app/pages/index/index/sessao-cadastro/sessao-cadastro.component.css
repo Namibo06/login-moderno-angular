@@ -1,0 +1,214 @@
+.cadastro-container{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 500px;
+  background-color: rgba(255,255,255,0.40);
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  position:relative;
+  left: 31.5%;
+  max-width: 76.5%;
+  z-index: 3;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+}
+
+div.title h1{
+  padding: 85px 5px;
+  font-weight: 300;
+  letter-spacing: 5px;
+  text-align: center;
+  font-size: 35px;
+}
+
+div.boas-vindas > p{
+  text-align: left;
+  padding-left: 60px;
+  font-weight: bold;
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+
+div.linha{
+  width: 73px;
+  margin-left: 60px;
+  border-radius: 5px;
+  border-bottom: 3px solid #ffffff;
+  margin-bottom: 60px;
+}
+
+div.redes{
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
+div.rede-single{
+  color: #0000009c;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+div.rede-single:active{
+  position: relative;
+  top: 1px;
+}
+
+@media screen and (width < 1250px) {
+  .cadastro-container{
+    max-width:77.2%;
+  }
+}
+
+@media screen and (width < 1150px) {
+  .cadastro-container{
+    max-width:77.5%;
+  }
+}
+
+@media screen and (width < 1100px) {
+  .cadastro-container{
+    left: 25%;
+    max-width:77.8%;
+  }
+
+  div.boas-vindas > p{
+    padding-left: 40px;
+  }
+
+  div.linha{
+    margin-left: 40px;
+  }
+}
+
+@media screen and (width < 1050px) {
+  .cadastro-container{
+    left: 20%;
+    max-width:77.8%;
+  }
+}
+
+@media screen and (width < 995px) {
+  .cadastro-container{
+    left: 21%;
+    max-width:77.8%;
+    width: 250px;
+  }
+
+  div.title h1{
+    font-size: 30px;
+  }
+
+  div.boas-vindas > p{
+    padding-left: 25px;
+    font-size: 28px;
+    letter-spacing: 1.5px;
+  }
+
+  div.linha{
+    margin-left: 25px;
+    width: 60px;
+  }
+
+  div.rede-single{
+    margin: 0 8px;
+  }
+}
+
+@media screen and (width < 985px) {
+  .cadastro-container{
+    left: 20%;
+    max-width:77.8%;
+    width: 250px;
+  }
+}
+
+@media screen and (width < 970px) {
+  .cadastro-container{
+    left: 15%;
+    max-width:77.8%;
+    width: 250px;
+  }
+}
+
+@media screen and (width < 960px) {
+  .cadastro-container{
+    left: 35%;
+    max-width:77.8%;
+    width: 220px;
+  }
+
+  div.title h1{
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
+
+  div.boas-vindas > p{
+    padding-left: 20px;
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+
+  div.linha{
+    margin-left: 20px;
+    width: 46px;
+  }
+}
+
+@media screen and (width < 950px) {
+  .cadastro-container{
+    left: 66.2%;
+    max-width:90.8%;
+    width: 220px;
+  }
+}
+
+@media screen and (width < 930px) {
+  .cadastro-container{
+    left: 50.2%;
+    max-width:90.8%;
+    width: 220px;
+  }
+}
+
+@media screen and (width < 915px) {
+  .cadastro-container{
+    left: 40.2%;
+    max-width:90.8%;
+    width: 200px;
+  }
+
+  div.title h1{
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+
+  div.linha{
+    width: 45px;
+  }
+
+}
+
+@media screen and (width < 890px) {
+  .cadastro-container{
+    left: 25.2%;
+    max-width:90.8%;
+    width: 200px;
+  }
+}
+
+@media screen and (width < 885px) {
+  .cadastro-container{
+    left: 41.2%;
+    max-width:90.8%;
+    width: 190px;
+  }
+}
+
+@media screen and (width < 880px) {
+  .cadastro-container{
+    display: none;
+  }
+}

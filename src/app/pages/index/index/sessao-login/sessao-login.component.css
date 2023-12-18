@@ -1,0 +1,467 @@
+.login-container{
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 600px;
+  position: relative;
+  left: 0;
+  background-color: rgba(0,0,0,0.2);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  z-index: 3;
+}
+
+div.logar{
+  display: flex;
+  z-index: 3;
+  position: relative;
+  right: 47%;
+  top:60%;
+}
+
+.logar button{
+  width: 180px;
+  border-radius: 20px;
+  margin: 15px 15px 0 0;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  background: linear-gradient(to right,rgba(255,255,255,0.32),rgba(0,0,0,0.25));
+  cursor: pointer;
+  border: 0;
+  color: rgba(255,255,255,0.82);
+  box-shadow: 1px 2px 8px rgba(0,0,0,0.4);
+}
+
+.logar button:hover{
+  box-shadow: 1px 3px 10px rgba(0,0,0,0.4);
+}
+
+.logar button:active,.rede-single:active{
+  position: relative;
+  top: 1px;
+}
+
+div.title{
+  text-align: center;
+  padding: 10px 0 20px 0;
+  color: rgba(255,255,255,0.82);
+}
+
+div.title h1{
+  font-size: 40px;
+  font-weight: 300;
+}
+
+div.formulario{
+  text-align: center;
+}
+
+.formulario .campo{
+  position: relative;
+  width: 300px;
+  margin: 30px auto;
+}
+
+.campo input{
+  border-radius: 15px;
+  height: 35px;
+  width: 240px;
+  padding: 5px 45px 5px 55px;
+  border: 0;
+  box-shadow: 2px 3px 6px rgba(255,255,255,0.22);
+  background-color: transparent;
+  outline: 0;
+  color: rgba(255,255,255,0.52);
+  font-size: 18px;
+}
+
+.campo input::placeholder{
+  font-size: 18px;
+}
+
+.campo fa-icon{
+  color: #ffffff;
+  position: absolute;
+  top: 8px;
+}
+
+.campo fa-icon.lock,.campo fa-icon.user{
+  left: 40px;
+  border-right: 2px solid #ffffff;
+  padding-right: 10px;
+}
+
+.campo fa-icon.eye{
+  right: 40px;
+  cursor: pointer;
+}
+
+div.info-form{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 300px;
+  margin: 30px auto;
+}
+
+div.info-form span{
+  margin-left: 5px;
+  font-size: 17px;
+  color: #ffffff;
+}
+
+div.info-form a{
+  text-decoration: none;
+  padding: 1px;
+  border-bottom: 1px solid rgba(255,255,255,0.22);
+  color: rgba(255,255,255,0.82);
+  transition: 0.2s;
+}
+
+div.info-form a:hover{
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+button[type=submit]{
+  width: 250px;
+  position: relative;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 19px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: rgba(9, 11, 70, 0.822);
+  border: 0;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+button[type=submit]:active{
+  top: 1px;
+}
+
+.redes{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 25px;
+  color: #ffffff;
+}
+
+.redes .rede-single{
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+@media screen and (width < 1155px){
+  div.logar{
+    right: 44%;
+  }
+}
+
+@media screen and (width < 1100px) {
+  .login-container{
+    left: -4.7%;
+  }
+
+  div.logar{
+    right: 42%;
+  }
+}
+
+@media screen and (width < 1050px) {
+  .login-container{
+    left: -7.9%;
+    width: 500px;
+  }
+
+  div.logar{
+    right: 47%;
+  }
+
+  .logar button{
+    width: 160px;
+  }
+}
+
+@media screen and (width < 1030px) {
+  .login-container{
+    left: -8.2%;
+    width: 500px;
+  }
+
+}
+
+@media screen and (width < 995px) {
+  .login-container{
+    left: -16%;
+    width: 500px;
+  }
+
+  div.logar{
+    right: 39%;
+  }
+
+  .logar button{
+    width: 130px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (width < 970px) {
+  .login-container{
+    left: -19%;
+    width: 500px;
+  }
+
+  div.logar{
+    right: 33%;
+    margin: -15px;
+  }
+
+  .logar button{
+    width: 120px;
+  }
+
+  div.title{
+    padding: 20px 0 20px 0;
+  }
+
+}
+
+@media screen and (width < 960px) {
+  .login-container{
+    left: -10.8%;
+    width: 400px;
+  }
+
+  div.logar{
+    right: 34%;
+    margin: -30px;
+  }
+
+  .logar button{
+    width: 120px;
+  }
+
+  div.title{
+    padding: 40px 0 20px 0;
+  }
+}
+
+@media screen and (width < 950px) {
+  .login-container{
+    left: 10.8%;
+    width: 400px;
+  }
+}
+
+@media screen and (width < 930px) {
+  .login-container{
+    left: 0.8%;
+  }
+}
+
+@media screen and (width < 915px) {
+  .login-container{
+    left: -9%;
+  }
+
+  div.logar{
+    right: 30%;
+    margin: -30px;
+  }
+
+  .logar button{
+    width: 110px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (width < 890px) {
+  .login-container{
+    left: -18.8%;
+  }
+}
+
+@media screen and (width < 885px) {
+  .login-container{
+    left: -9.8%;
+    width: 350px;
+  }
+
+  div.logar{
+    right: 33%;
+    margin: -30px;
+  }
+
+}
+
+@media screen and (width < 880px) {
+  .login-container{
+    width: 500px;
+    position: relative;
+    left: -25%;
+    border-radius: 20px;
+  }
+
+  div.logar{
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 2px 2px 20px 0;
+    justify-content: right;
+  }
+
+  div.title{
+    padding: 70px 0 20px 0;
+  }
+}
+
+@media screen and (width < 730px) {
+  .login-container{
+    width: 400px;
+    position: relative;
+    left: -30%;
+  }
+}
+
+@media screen and (width < 600px) {
+  .login-container{
+    width: 350px;
+    position: relative;
+    left: -32%;
+  }
+}
+
+@media screen and (width < 540px) {
+  .login-container{
+    width: 350px;
+    position: relative;
+    left: -20%;
+  }
+}
+
+@media screen and (width < 460px) {
+  .login-container{
+    width: 330px;
+    position: relative;
+    left: -12%;
+  }
+
+  div.title h1{
+    font-size: 35px;
+  }
+}
+
+@media screen and (width < 400px) {
+  .login-container{
+    width: 330px;
+    position: relative;
+    left: -12%;
+  }
+}
+
+@media screen and (width < 390px) {
+  .login-container{
+    width: 280px;
+    position: relative;
+    left: -12%;
+  }
+
+  div.title h1{
+    font-size: 30px;
+  }
+
+  .logar button{
+    width: 130px;
+  }
+
+  .formulario .campo{
+    width: 200px;
+    margin: 30px auto;
+  }
+
+  .campo input{
+    width: 180px;
+    font-size: 16px;
+  }
+
+  .campo input::placeholder{
+    font-size: 14px;
+  }
+
+  .campo fa-icon.lock,.campo fa-icon.user{
+    left: 25px;
+  }
+
+  .campo fa-icon.eye{
+    right: 25px;
+  }
+
+  div.info-form{
+    width: 250px;
+    font-size: 14px;
+  }
+
+  button[type=submit]{
+    width: 200px;
+    left: 0;
+    font-size: 17px;
+  }
+
+  .redes{
+    margin-left: 10px;
+  }
+}
+
+@media screen and (width < 335px) {
+  .login-container{
+    width: 280px;
+    position: relative;
+    left: -6%;
+  }
+}
+
+@media screen and (width < 310px) {
+  .login-container{
+    width: 250px;
+    position: relative;
+    left: -10%;
+  }
+
+  .logar button{
+    width: 130px;
+  }
+
+  .campo input{
+    font-size: 14px;
+  }
+
+  .campo input::placeholder{
+    font-size: 12px;
+  }
+
+  div.info-form{
+    width: 200px;
+    font-size: 12px;
+    align-items: center;
+  }
+
+  button[type=submit]{
+    width: 180px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (width < 290px) {
+  .login-container{
+    width: 250px;
+    position: relative;
+    left: -5%;
+  }
+}

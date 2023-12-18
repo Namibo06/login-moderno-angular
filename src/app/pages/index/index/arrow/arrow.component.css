@@ -1,0 +1,79 @@
+button{
+  border-radius: 50%;
+  border: 0;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  position: relative;
+  right:-20px;
+  z-index: 10;
+}
+
+button:active{
+  position: relative;
+  top: 1px;
+}
+
+button fa-icon{
+  font-size: 21px;
+}
+
+@media screen and (width < 1100px) {
+  button{
+    right:6px;
+  }
+}
+
+@media screen and (width < 1050px) {
+  button{
+    right:25px;
+  }
+}
+
+@media screen and (width < 995px) {
+  button{
+    right:70px;
+  }
+}
+
+@media screen and (width < 970px) {
+  button{
+    right:85px;
+  }
+}
+
+@media screen and (width < 960px) {
+  button{
+    right:38px;
+  }
+}
+
+@media screen and (width < 950px) {
+  button{
+    right:-80px;
+  }
+}
+
+@media screen and (width < 930px) {
+  button{
+    right:-25px;
+  }
+}
+
+@media screen and (width < 915px) {
+  button{
+    right:28px;
+  }
+}
+
+@media screen and (width < 890px) {
+  button{
+    right:75px;
+  }
+}
+
+@media screen and (width < 885px) {
+  button{
+    right:25px;
+  }
+}

@@ -1,0 +1,53 @@
+<div class="login-container">
+  <div class="logar">
+    <button type="button" (click)="mudarTemplate()">
+      {{template}}
+    </button>
+  </div><!--logar-->
+
+  <div class="title">
+    <h1>{{TituloInicial}}</h1>
+  </div>
+
+  <div class="formulario">
+    <form action="" method="post">
+      <div class="campo">
+        <input type="text" name="usuario" id="usuario" placeholder="USUÁRIO" required>
+        <fa-icon class="user" [icon]="faUser" title="usuário"></fa-icon>
+      </div><!--campo-->
+
+      <div class="campo">
+        <input [type]="mostrarSenha  ? 'text' : 'password'" name="senha" id="senha" placeholder=" ******" maxlength="32" required>
+        <fa-icon class="lock" [icon]="faLock" title="senha"></fa-icon>
+        <fa-icon class="eye" [icon]="iconeOlho" (click)="mostrarEsconderSenha()" id="eye" title="mostrar/esconder senha"></fa-icon>
+      </div><!--campo-->
+
+      <div class="info-form" *ngIf="templateLogin">
+        <div class="lembrar-senha">
+          <input type="checkbox" name="check" id="check"><span>Lembrar</span>
+        </div><!--lembrar-senha-->
+
+        <div class="esqueceu-senha">
+          <a href="#">Esqueceu senha?</a>
+        </div><!--esqueceu-senha-->
+      </div><!--info-form-->
+
+      <button type="submit" name="{{nameBtn}}">{{btn}}</button>
+
+      <div class="redes">
+        <div class="rede-single" title="facebook">
+          <i data-feather="facebook"></i>
+        </div>
+
+        <div class="rede-single" title="instagram">
+          <i data-feather="instagram"></i>
+        </div>
+
+        <div class="rede-single" title="linkedin">
+          <i data-feather="linkedin" ></i>
+        </div>
+      </div><!--redes-->
+    </form>
+  </div>
+
+</div><!--login-container-->
